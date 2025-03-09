@@ -28,11 +28,6 @@ const generateStars = (count: number): Star[] => {
   }));
 };
 
-const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
-  // Function logic here...
-};
-
 export default function Home() {
   const [stars, setStars] = useState<Star[]>([]);
   const [mounted, setMounted] = useState(false);
