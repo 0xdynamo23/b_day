@@ -28,11 +28,15 @@ const generateStars = (count: number): Star[] => {
   }));
 };
 
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  // Function logic here...
+};
+
 export default function Home() {
   const [stars, setStars] = useState<Star[]>([]);
   const [mounted, setMounted] = useState(false);
   const [currentPage, setCurrentPage] = useState(0);
-  const [formData, setFormData] = useState({ message: "" });
 
   useEffect(() => {
     setStars(generateStars(50));
@@ -63,34 +67,6 @@ export default function Home() {
       image: "/j31.jpg",
     },
   ];
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    try {
-      const response = await fetch("/api/wallet", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ message: formData.message }), // Changed 'address' to 'message'
-      });
-
-      if (response.ok) {
-        setFormData((prev) => ({
-          ...prev,
-          message: "Submitted  now please continue",
-        }));
-      } else {
-        throw new Error("Failed to save address");
-      }
-    } catch (error) {
-      console.error(error); // Log the error
-      setFormData((prev) => ({
-        ...prev,
-        message: "Error: Unable to save address",
-      }));
-    }
-  };
 
   if (!mounted) return null;
 
