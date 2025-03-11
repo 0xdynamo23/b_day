@@ -41,7 +41,7 @@ export default function Home() {
   const pages: Page[] = [
     {
       type: "intro",
-      text: "Happy Birthday, Rits! 🎉💖 May your life be filled with endless joy, love, and success.Teri har khushi bina maange mil jaye,Jo tu chahe wo tera ho jaye. 💖💌 Your birthday is special, just like you! May this year bring you closer to all your dreams! ✨",
+      text: "Happy Birthday, Rits! 🎉💖 May your life be filled with endless joy, love, and success.Teri har khushi bina maange mil jaye,Jo tu chahe wo tera ho jaye. 💖💌 ",
     },
     {
       type: "content",
