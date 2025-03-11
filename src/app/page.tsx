@@ -41,24 +41,26 @@ export default function Home() {
   const pages: Page[] = [
     {
       type: "intro",
-      text: "Happy Birthday, Rits! 🎉💖 Tumhari zindagi khushiyon, pyaar aur safalta se bhari rahe. Har sapna sach ho aur har din khoobsurat ho! ✨🎂💐",
+      text: "Happy Birthday, Rits! 🎉💖 May your life be filled with endless joy, love, and success.Teri har khushi bina maange mil jaye,Jo tu chahe wo tera ho jaye. 💖💌 Your birthday is special, just like you! May this year bring you closer to all your dreams! ✨",
     },
     {
       type: "content",
-      text: "Janti ho! Tumse baat karna aur tumhe text karna ek alag hi ehsaas dilata hai. Tumhari maujudgi kuch khas hai, jo main bohot pasand karta hoon. 💖✨",
+      text: "Tumhara kabhi chhote baccho ki tarah behave karna, hamesha khush rehna aur kabhi-kabhi thoda gussa karna -sab kuch ekdum unique lagta hai. Aur haan, guluna ke jese mood swings toh damn! Sab milke tumhe aur bhi special banate hain",
       image: "/j_anime.png",
     },
     {
       type: "content",
-      text: "Tum jiyo hazaron saal, har saal ke din ho pachaas hazaar!",
+      text: "Pata hai? Tumse baat karna aur tumhe text karna hamesha ek alag si positive vibe deta hai. Tumhari presence kuch khas hai, jo mujhe bohot pasand hai! 😊✨ Dost toh bhot hote hain, but except few people ek tum hi ho jo hamesha on the spot present rehti ho. Koi bhi zarurat padti hai, toh bina kahe help kar deti ho. Aur jab bhi low feel karta hoon, tumse baat karke hamesha mood fresh ho jata hai. Ye sab cheezein tumhe mere liye aur bhi special aur unique bana deti hain!",
       image: "/j2.png",
     },
     {
       type: "content",
-      text: `🌸 Phoolon ki tarah mehka kare jeevan tumhara,
-              Sitaron ki tarah chamka kare aangan tumhara,
-              Dua hai meri is rab se,
-              Har janamdin ho sabse pyaara tumhara! 🎉🎁✨`,
+      text: "Kabhi hasi, kabhi gussa, kabhi mood swings ka jadoo, Tera har andaaz alag, jaise ek pyaari si kahani ka khoobsurat kirdar ho! 💖📖 Tera bachpana ek alag hi vibe lata hai, Jo har din ko aur bhi khaas bana jata hai! 😊🎀🎉",
+      image: "/j4.png",
+    },
+    {
+      type: "content",
+      text: "Happy Birthday! 🎂✨ Hamesha aise hi khush rehna, kyunki tu ek vibe hai jo kisi ke bhi din ko better bana sakti hai! 💖🥳",
       image: "/j31.jpg",
     },
   ];
@@ -141,8 +143,8 @@ export default function Home() {
                   <div
                     key={i}
                     className={`font-serif ${i === 0
-                        ? "text-4xl md:text-5xl font-bold"
-                        : "text-2xl md:text-3xl"
+                      ? "text-4xl md:text-5xl font-bold"
+                      : "text-2xl md:text-3xl"
                       } text-[#2a1810]`}
                   >
                     {line}
